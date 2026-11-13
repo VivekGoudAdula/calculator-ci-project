@@ -48,4 +48,4 @@ jobs:
           RENDER_DEPLOY_HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
         run: |
           curl --fail --silent --show-error \
-          --request POST "$RENDER_DEPLOY_HOOK_URL"
+          --request GET "$RENDER_DEPLOY_HOOK_URL"
